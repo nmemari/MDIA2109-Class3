@@ -1,10 +1,12 @@
 export default function Card ({
-    degree="none",
-    gpa="0",
+    name="none",
+    position="none",
+    tel="none",
+    email="none",
     colourCard="none",
     colourInfo="none",
-    fontColour="white",
     font="0",
+    fontColour="white",
     image="icon/personTwo.png"
 }) {
     return (
@@ -16,50 +18,65 @@ export default function Card ({
             display: "flex",
             alignItems:"center",
             borderRadius: "20px",
-            width: "650px",
+            width: "450px",
             padding: "20px",
             margin: "20px",
             fontWeight: "700"
         }}>
             <div style={{
                 marginRight: "40px",
-                marginLeft: "10px",
+                marginLeft: "10px"
             }}>
                 {
-                    gpa <= "3.5" ? <img src={"icon/person.png"} width='70'/>:
-                    gpa > "3.5" ? <img src={'icon/personThree.png'} width='70'/>:
-                    <img src={image} width='70'/>
+                    name === "Leon Scott Kennedy" ? <img src={"icon/leon.webp"} />:
+                    name === "Jill Valentine" ? <img src={'icon/jill.webp'} />:
+                    name === "Claire Redfield" ? <img src={'icon/claire.webp'}/>:
+                    <img src={image}/>
                 }
             </div>
-
             <div style={{
                 backgroundColor: colourInfo,
                 borderRadius: "20px",
                 boxShadow: "8px 8px #2B4570",
                 padding: "20px",
-                paddingLeft: "10px",
                 display: "flex",
                 flexDirection:"column",
+                alignItems: "center",
                 justifyContent: "center",
-                width: "480px"
+                width: "180px"
             }}>
                 <div style={{
                     padding: "10px",
-                    marginBottom: "10px",
+                    width: "100%",
                     backgroundColor: "#2B4570",
                     color: "#EFCA08",
                     textAlign: "center",
                     borderRadius: "10px"
                 }}>
-                    {degree}
+                    {name}
                 </div>
                 <div style={{
-                    marginLeft: "20px",
-                    textAlign: "left"
+                    padding: "10px",
+                    textAlign: "left",
+                    width: "100%"
                 }}>
-                    GPA: {gpa}
+                    {position}
                 </div>
-            </div>
+                <div style={{
+                    padding: "10px",
+                    textAlign: "left",
+                    width: "100%"
+                }}>
+                    {tel}
+                </div>
+                <div style={{
+                    padding: "10px",
+                    textAlign: "left",
+                    width: "100%"
+                }}>
+                    {email}
+                </div>
+            </div>   
         </div>
     )
 }
