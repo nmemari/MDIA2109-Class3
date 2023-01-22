@@ -1,0 +1,26 @@
+[
+    {
+        "employeeNumber": "398249",
+        "name": "Leon Scott Kennedy",
+        "department": "University Dean",
+        "position": "President",
+        "tel": "123-456-8910",
+        "email": "leonkennedy@rcit.com"
+    },
+    {
+        "employeeNumber": "319048",
+        "name": "Jill Valentine",
+        "department": "Human Resources",
+        "position": "HR Director",
+        "tel": "123-981-6540",
+        "email": "jillvalentine@rcit.com"
+    },
+    {
+        "employeeNumber": "302941",
+        "name": "Claire Redfield",
+        "department": "Faculty",
+        "position": "Faculty Director",
+        "tel": "123-654-1980",
+        "email": "clairredfield@rcit.com"
+    }
+]
