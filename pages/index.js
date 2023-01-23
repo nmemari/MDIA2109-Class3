@@ -24,7 +24,7 @@ export default function Home() {
         <div class="nav-bar">
           <div class="nav-title">Raccoon City Institute of Technology</div>
           <div class="nav-button">
-            <Link href="about">About</Link>
+            <Link className={styles.link} href="about">About</Link>
           </div>
         </div>
         {

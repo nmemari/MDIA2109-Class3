@@ -42,10 +42,6 @@ body {
     cursor: pointer;
 }
 
-.nav-button .Link{
-    text-decoration: none;
-}
-
 .nav-title {
     border: 5px solid var(--yellow-munsell);
     border-radius: 10px;

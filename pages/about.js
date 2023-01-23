@@ -22,7 +22,7 @@ export default function About() {
                 <div class="nav-bar">
                     <div class="nav-title">Raccoon City Institute of Technology</div>
                     <div class="nav-button">
-                        <Link href="..">Home</Link>
+                        <Link className={styles.link} href="..">Home</Link>
                     </div>
                 </div>
                 {
